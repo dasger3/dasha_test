@@ -1,0 +1,618 @@
+@font-face {
+    font-family: "Averta CY"; /* Имя шрифта */
+    src: url(font/AvertaDemoPE-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: 'Bebas Neue'; /* Имя шрифта */
+    src: url(font/bebas_neue_regular.ttf); /* Путь к файлу со шрифтом */
+}
+
+/* Container
+===================*/
+body {
+    margin: 0px;
+    max-width: 1920px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header
+===================*/
+.header {
+    width: 100%;
+    height: 120px;
+    padding: 10px 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header_inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 7vw;
+    height: 8.33vw;
+}
+
+.header_logo{
+    position: absolute;
+    top:10px;
+    left: 45.835vw;
+    width: 8.33vw;
+    height: 8.33vw;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 27.7vw;
+}
+
+.nav_link {
+    font-family: "Averta CY";
+    font-weight: 600;
+    font-size: 1.1vw;
+    color: #fff;
+    text-decoration: none;
+    transition: opacity .1s linear;
+}
+.nav_link:hover{
+    color: #AE0F0A;
+    border-bottom: 2px solid #AE0F0A;
+}
+
+.contact{
+    display: flex;
+    position: absolute;
+    right: 5%;
+    align-items: center;
+}
+
+.contact_icon{
+    margin-right: 10px;
+    width: 1.04vw;
+    height: 1.04vw;
+}
+.contact_text{
+    font-family: "Averta CY";
+    font-weight: 600;
+    font-size: 1.1vw;
+
+    color: #fff;
+}
+
+.burger{
+    display: none;
+}
+
+/* Intro
+===================*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: #000000 url("../img/fon/block1.jpg") center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.intro_title {
+    margin-bottom: -15px;
+    font-size: 2.1vw;
+    color: #AE0F0A;
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.intro_subtitle {
+    margin-bottom: 30px;
+    width: 55vw;
+    font-family: "Averta CY";
+    font-size: 4.167vw;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+/* Button
+===================*/
+.button_container {
+    display: flex;
+    justify-content: space-between;
+    width: 31.1vw;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13.8vw;
+    height: 4.167vw;
+    cursor: pointer;
+
+    font-family: 'Bebas Neue';
+    font-size: 1.25vw;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    transition: background .1s linear;
+}
+
+.button--intro1 {
+    border: 2px solid #EDD6BC;
+    box-sizing: border-box;
+    color: #EDD6BC;
+}
+
+.button--intro1:hover {
+    background-color: #EDD6BC;
+    color: #221F20;
+}
+.button--intro2 {
+    border: 2px solid #EDD6BC;
+    box-sizing: border-box;
+    background-color: #EDD6BC;
+    color: #221F20;
+}
+
+.button--intro2:hover {
+    border: 2px solid #FFF7EE;
+    background-color: #FFF7EE;
+}
+
+
+/* Elegance
+===================*/
+.elegance{
+    background: #FFF7EE;
+    height: 62.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.elegance_inner{
+    display: flex;
+    flex-direction: row;
+}
+.elegance_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3.5vw;
+    height: 38.2vw;
+    width: 31.5vw;
+    background: #ffffff;
+    z-index: 100;
+}
+h5 {
+    font-family: 'Bebas Neue';
+    font-size: 1.4vw;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #EDD6BC;
+}
+
+.slogan{
+    margin-top: 6.25vw;
+}
+.slogan1{
+    margin-top: 0;
+    margin-bottom: 1.94vw;
+}
+.slogan2{
+    color: #AE0F0A;
+
+}
+.title_1{
+    width: 50vw !important;
+    color: #FFFFFF;
+}
+.title_2{
+    width: 30vw !important;
+    margin-bottom: 2.36vw;
+    text-align: center;
+    color: #FFFFFF;
+}
+h3 {
+    font-family: "Averta CY";
+    font-size: 3.2vw;
+    color: #221F20;
+    font-weight: 600;
+    line-height: 4.2vw;
+    letter-spacing: 0.02em;
+}
+.title{
+    margin-top: -25px;
+    width: 22vw;
+}
+.title5 {
+    width: 26vw;
+    margin-top: 2vw;
+    margin-bottom: 0.7vw;
+}
+h6 {
+    font-family: "Averta CY";
+    font-size: 1.25vw;
+    line-height: 1.8vw;
+    color: #4E4E4E;
+    font-weight: 400;
+}
+.text{
+    margin-top: -20px;
+    width: 23.6vw;
+}
+.text1{
+    font-size: 1.11vw;
+    margin-top: 13.9px;
+    margin-bottom: 0;
+    width: 35.9vw;
+    text-align: center;
+}
+.text2{
+    font-size: 0.83vw;
+    color:#D0D0D0;
+    margin-top: 1vw;
+}
+.text3{
+    margin: 0;
+}
+
+.elegance_photo{
+    width: 60vw;
+    height: 48.6vw;
+    background: #C4C4C4;
+    background-size: cover;
+    margin-left: -8vw;
+    z-index: 50;
+}
+.elegance_blackphoto{
+    position: absolute;
+    width: 37.6vw;
+    height: 32.7vw;
+    top: 36.8vw;
+    right: 0;
+    background: #4E4E4E;
+    background-size: cover;
+
+    z-index: 20;
+}
+
+.button_leftright{
+    width: 21.4vw;
+    padding: 0 2.8vw; 
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 7vw;
+    bottom: 7vw;
+}
+.button_arrow{
+    display: block;
+    width: 2.3vw;
+    height: 2.3vw;
+    background-image: url(../img/icon/arrow1.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+.right{
+    background-image: url(../img/icon/arrow4.png);
+}
+
+.button_arrow:hover{
+    background: #AE0F0A;
+    background-image: url(../img/icon/arrow3.png);
+    background-size: cover;
+}
+.right:hover{
+    background-image: url(../img/icon/arrow2.png);
+    background-size: cover;
+}
+/* Try Menu
+===================*/
+.trymenu{
+    background-color:#AE0F0A;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+.trymenu_inner{
+    margin-left: 10.6vw;
+    z-index: 2;
+}
+.slider_inner {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 2.43vw;
+    margin-left: 7%;
+    overflow: hidden;
+    max-width: 93%;
+    
+    
+}
+.slider_block {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.8vw;
+    position: relative;
+}
+.photo_scale {
+    overflow: hidden;
+}
+.slider_photo {
+    width: 41.67vw;
+    height: 23.2vw;
+    transition: 1s;
+}
+.slider_photo:hover {
+    transform: scale(1.2);
+}
+.dish {
+    margin: 1vw 0;
+    font-size: 1.7vw;
+}
+.dish_arrow {
+    display: block;
+    width: 2.3vw;
+    height: 2.3vw;
+    background-image: url(../img/icon/arrow3.png);
+    background-size: cover;
+}
+.dish_arrow_r {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/icon/arrow2.png);
+    background-size: cover;
+}
+
+.review_block {
+    display: flex;
+    justify-content: center;
+    height: 54.3vw;
+    background-image: url(../img/fon/block3.png);
+    background-size: cover;
+}
+.review_inner {
+    display: flex;
+    position: relative; 
+    flex-direction: column;
+    align-items: center;
+    width: 86vw;
+    margin: 6.95vw 0;
+}
+.review_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:8.33vw;
+    width: 48.6vw;
+    height: 25.83vw;
+    background-color: white;
+    z-index: 2;
+}
+.review_slider_block {
+    display: flex;
+    position: absolute;
+    top: 12.22vw;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.review_slider_back {
+    width: 69.4vw;
+    height: 18vw;
+    background: #FFF7EE;
+}
+.review_arrow {
+    background-image: url(../img/icon/arrow2.png);
+    background-size: cover;
+}
+.rewiew_avatar {
+    width: 6.25vw;
+    height: 6.25vw;
+    border-radius: 50%;
+    margin-top: 1.39vw;
+}
+.review_author {
+    color: black;
+    margin-bottom: 1.11vw;
+}
+.star_container {
+    display: flex;
+}
+.star {
+    width: 1.18vw;
+    height: 1.18vw;
+    background-size: cover;
+}
+.rw_bt_ct {
+    position: absolute;
+    bottom: 0;
+}
+
+.agregators {
+    justify-content: flex-start;
+    height: 37.8vw;
+}
+.map_icon {
+    width: 3.47vw;
+    height: 3.47vw;
+    margin-top: 0;
+}
+.block4_1 {
+    width: 31.7vw;
+    height: 27.8vw;
+    position: absolute;
+    top: 7vw;
+    right: 25.7vw;
+    z-index: 2;
+}
+.block4_2 {
+    width: 37.6vw;
+    height: 41.25vw;
+    position: absolute;
+    top: 3.5vw;
+    right: 0;
+    z-index: 1;
+}
+.slider_block_4 {
+    display: flex;
+    width: 86.1vw;
+    margin-left: 7vw;
+    margin-top: 1.94vw;
+    overflow-block: hidden;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider_photo_4 {
+    display: none;
+    margin-left: 7vw;
+    margin-top: -1.7vw;
+    width: 86.1vw;
+    height: 25.5vw;
+    z-index: 1;
+    animation-name: Appearance;
+    animation-duration: 2s;
+}
+@-webkit-keyframes Appearance {
+    0% {opacity: 0.7;}
+    100% {opacity: 1;}
+  }
+.dish_name {
+    font-family: 'Bebas Neue';
+    font-size: 1.1vw;
+    margin: 0;
+    opacity: 60%;
+}
+.dish_name_active {
+    opacity: 100%;
+}
+.contact_block {
+    display: flex;
+    align-items: center;
+    height: 45.8vw;
+    background-image: url(../img/fon/block5.png);
+    background-size: cover;
+}
+.contact_content {
+    margin-left: 7vw;
+}
+.contact_icon {
+    width: 1.4vw;
+    height: 1.4vw;
+}
+.contact_inner {
+    display: flex;
+    width: 20vw;
+    margin-top: 1.4vw;
+    align-items: center;
+}
+.bt_red {
+    margin-top: 2vw;
+    color: white;
+    background-color: #AE0F0A;
+}
+.bt_red:hover {
+    background-color: #C42B26;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vw;
+    padding: 0 7vw;
+    background-color: #221F20;
+}
+.footer_inner {
+    display: flex;
+    margin: 0.5vw 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_logo {
+    margin-right: 0.3vw;
+    width: 5.9vw;
+    height: 5.9vw;
+}
+.footer_txt {
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.social_container {
+    display: flex;
+    justify-content: space-between;
+    width: 6.2vw;
+}
+.social_icon {
+    width: 2.4vw;
+    height: 2.4vw;
+    border-radius: 50%;
+}
+.time_container {
+    display: flex;
+    flex-direction: column;
+}
+.time_txt {
+    color: white;
+    font-family: "Averta CY";
+    font-weight: 600;
+    margin: 0.2vw 0 0 0;
+    font-size: 0.97vw;
+}
+.time_txt1 {
+    font-weight: 400;
+}
+.time_txt2 {
+    margin-bottom: 0.4vw;
+}
+.text_f {
+    bottom: 0;
+    left: 30.5vw;
+    font-size: 1.1vw;
+    color: white;
+    opacity: 60%;
+    margin: 0;
+}
+.text_f1 {
+    font-size: 1.1vw;
+    margin: 0;
+    opacity: 100%;
+}
+.footer_inner2 {
+    justify-content: center;
+    margin-top: -2.3vw;
+}
+.icon_company {
+    margin: 0 5px;
+    width: 5.6vw;
+    height: 1.8vw;
+}
+.designad {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
